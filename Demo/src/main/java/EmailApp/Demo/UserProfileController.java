@@ -9,7 +9,12 @@ public class UserProfileController {
         System.out.println("User Phone Number: "+userProfile.getPhoneNumber());
         System.out.println("User Address: "+userProfile.getAddress());
 
-        System.out.println("*** Updating Phone Number AND Address ***");
+        userProfile.setAddress("Muscat");
+        userProfile.setPhoneNumber("12345687");
 
+        System.out.println("*** Updated Information ***");
+        System.out.println("User ID: "+userProfile.getUserId());
+        System.out.println("User Phone Number: "+userProfile.getPhoneNumber());
+        System.out.println("User Address: "+userProfile.getAddress());
     }
 }
