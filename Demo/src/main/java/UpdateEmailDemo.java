@@ -1,5 +1,3 @@
-package EmailApp.Demo;
-import java.util.*;
 public class UpdateEmailDemo {
     public static void main(String[] args){
         String currentEmailAddress="wejdan@gmail.com";

@@ -1,5 +1,3 @@
-package EmailApp.Demo;
-
 public class UserProfileController {
     public static void main(String[] args){
         UserProfile userProfile=new UserProfile("U1-01","98765432","Oman");
