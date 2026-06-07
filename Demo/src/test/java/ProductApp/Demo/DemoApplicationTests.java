@@ -1,4 +1,4 @@
-package EmailApp.Demo;
+package ProductApp.Demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
