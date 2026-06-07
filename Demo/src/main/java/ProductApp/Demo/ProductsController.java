@@ -3,7 +3,6 @@ package ProductApp.Demo;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
-
 import java.util.HashMap;
 
 @RestController
@@ -17,7 +16,7 @@ public class ProductsController {
     }
 
     @PutMapping("updateStock/{id}")
-    public String updateProduct(@PathVariable int id,@RequestParam int quantity){
+    public String updateProduct(@PathVariable int id, @RequestParam int quantity){
         if(!productHashMap.containsKey(id)){
             return "Product with ID "+ id+ " NOT Found...";
         }
