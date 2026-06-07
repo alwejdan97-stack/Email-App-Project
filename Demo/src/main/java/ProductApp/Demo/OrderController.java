@@ -15,7 +15,7 @@ public class OrderController {
     }
 
     @PutMapping("updateStock/{orderId}")
-    public String updateProduct(@PathVariable int orderId, @RequestParam String shippingAddress,@RequestParam String orderStatus){
+    public String updateOrder(@PathVariable int orderId, @RequestParam String shippingAddress,@RequestParam String orderStatus){
         if(!orderHashMap.containsKey(orderId)){
             return "Order with ID "+ orderId+ " NOT Found...";
         }
