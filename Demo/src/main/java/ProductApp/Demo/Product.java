@@ -1,21 +1,21 @@
 package ProductApp.Demo;
 
 public class Product {
-    private String id;
+    private int id;
     private String name;
     private int stockQuantity;
 
-    public Product(String id, String name, int stockQuantity) {
+    public Product(int id, String name, int stockQuantity) {
         this.id = id;
         this.name = name;
         this.stockQuantity = stockQuantity;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
