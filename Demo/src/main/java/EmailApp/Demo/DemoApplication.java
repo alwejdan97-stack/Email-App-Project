@@ -13,6 +13,14 @@ public class DemoApplication {
 		boolean status=false;
 
 		System.out.println("The current Email is: "+currentEmailAddress);
+
+		if(!currentEmailAddress.equalsIgnoreCase(newEmailAddress)){
+			currentEmailAddress=newEmailAddress;
+			status=true;
+			System.out.println("Email Address Updated SUCCESSFULLY...");
+		}else{
+			System.out.println("NEW Email Address Updated SUCCESSFULLY...");
+		}
 	}
 
 }
