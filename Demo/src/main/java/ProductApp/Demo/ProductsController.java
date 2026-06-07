@@ -9,6 +9,7 @@ import java.util.HashMap;
 @RestController
 public class ProductsController {
     HashMap<Integer, Product> productHashMap=new HashMap<>();
+    // empty constructor to add values to HashMap
     public ProductsController(){
         productHashMap.put(1,new Product(01,"IPHONE",350));
         productHashMap.put(2,new Product(02,"HONOR",235));
