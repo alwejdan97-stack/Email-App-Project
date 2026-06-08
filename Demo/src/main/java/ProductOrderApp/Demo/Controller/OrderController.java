@@ -1,5 +1,6 @@
-package ProductApp.Demo;
+package ProductOrderApp.Demo.Controller;
 
+import ProductOrderApp.Demo.Entities.Order;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +18,7 @@ public class OrderController {
         orderHashMap.put(3,new Order(03,"Sohar","Pending"));
     }
 
-    @PutMapping("/updateStock/{orderId}")
+    @PutMapping("update-Stock/{orderId}")
     public String updateOrder(@PathVariable int orderId, @RequestParam String shippingAddress,@RequestParam String orderStatus){
         if(!orderHashMap.containsKey(orderId)){
             return "Order with ID "+ orderId+ " NOT Found...";

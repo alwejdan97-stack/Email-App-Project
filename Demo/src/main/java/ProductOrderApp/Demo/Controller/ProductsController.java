@@ -1,11 +1,11 @@
-package ProductApp.Demo;
+package ProductOrderApp.Demo.Controller;
 
+import ProductOrderApp.Demo.Entities.Product;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PutMapping;
 
-import java.util.*;
 import java.util.HashMap;
 
 @RestController

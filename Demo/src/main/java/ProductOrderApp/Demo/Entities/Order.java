@@ -1,4 +1,4 @@
-package ProductApp.Demo;
+package ProductOrderApp.Demo.Entities;
 
 public class Order {
     private int orderId;
